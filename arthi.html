@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            background-color: green;
+        }
+        .class{
+            border: 2px solid black;
+            width: 25%;
+            background-color: orange;
+        }
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="class">
+    <input type="number" name="input" id="input">
+    <input type="number" name="input" id="in">
+    <p id="out"></p><br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button><br>
+    <button onclick="mul()">Mul</button>
+    <button onclick="div()">Div</button>
+</div>
+    <script>
+
+        function add(){
+            var a=document.getElementById("input").value;
+            var b=document.getElementById("in").value;
+            
+             var result=parseInt(a)+parseInt(b);
+             document.getElementById("out").innerHTML="additon of two numbers"+result;
+        }
+        function mul(){
+            var a=document.getElementById("input").value;
+            var b=document.getElementById("in").value;
+             var result=parseInt(a)*parseInt(b);
+             document.getElementById("out").innerHTML="multiplication of two numbers"+result;
+        }
+        function sub(){
+            var a=document.getElementById("input").value;
+            var b=document.getElementById("in").value;
+             var result=parseInt(a)-parseInt(b);
+             document.getElementById("out").innerHTML="subtraction of two numbers"+result;
+        }
+        function div(){
+            var a=document.getElementById("input").value;
+            var b=document.getElementById("in").value;
+             var result=parseInt(a)/ parseInt(b);
+             document.getElementById("out").innerHTML="division of two numbers"+result;
+        }
+    </script>
+</body>
+</html>

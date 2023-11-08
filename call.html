@@ -1,0 +1,73 @@
+<html>
+<head>
+<title></title>
+<style>
+    button{
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+
+    }
+    button:hover{
+        background-color: green;
+    }
+    .class{
+        border: 2px solid black;
+        width: 20%;
+        background-color: orange;
+    }
+    input{
+        margin: 10px;
+    }
+    
+</style>
+</head>
+<body>
+<div class="class">
+        <input type="number" name="input" id="input">
+        <p id="out"></p>
+        
+        <button onclick="append(1)">1</button>
+        <button onclick="append(2)">2</button>
+        <button onclick="append(3)">3</button>
+        <button onclick="append('+')">+</button>
+        <button onclick="append(4)">4</button>
+        <button onclick="append(5)">5</button>
+        <button onclick="append(6)">6</button>
+	    <button onclick="append('-')">-</button>
+        <button onclick="append(7)">7</button>
+        <button onclick="append(8)">8</button>
+        <button onclick="append(9)">9</button>
+	    <button onclick="append('x')">x</button>
+	    <button onclick="append('.')">.</button>
+        <button onclick="append(0)">0</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="append('=')">=</button>
+        
+        
+        <button onclick="result()">Result</button>
+        <button onclick="clear()">Clear</button>
+        
+    </div>
+    <script>
+        var dis=document.getElementById("input");
+        const display=document.getElementById("input");
+        
+        function append(num){
+            document.getElementById("input").value+=num;
+            console.log(dis)
+
+        }
+        function clear(){
+            document.getElementById("input").value=0;
+        }
+        function result(){
+            var ans=eval(document.getElementById("input").value);
+            document.getElementById("out").ans;
+        }
+    </script>
+
+
+</body>
+</html>

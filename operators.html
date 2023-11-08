@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+    <style>
+        .oper{
+            width: 20%;
+            height: 200px;
+            background-color: aqua;
+            
+            border-radius: 10px;
+            box-shadow: 1px 3px 2px;
+            transition: 2s;
+        }
+        .oper:hover{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="oper">
+    <script>
+        var a=30;
+        var b=10;
+        var c="test";
+        var x=true;
+        var y= false;
+        var inlinebreak="<br><br/>";
+
+        //arithmetic operators
+        document.write("a+b=");
+        result=(a+b);
+        document.write(result);
+        document.write(inlinebreak);
+
+        //relational operator
+        document.write("a&ltb=>");
+        result=(a<b);
+        document.write(result);
+        document.write(inlinebreak);
+
+        //logical operator
+        document.write("x||y=>");
+        result=(x||y);
+        document.write(result);
+        document.write(inlinebreak);
+
+        //Assignment operator
+        document.write("a*=b =>");
+        result=(a*=b);
+        document.write(result);
+        document.write(inlinebreak);
+
+        //conditional operator
+        document.write("((a&ltb)?100:200)=>");
+        result=(a<b)?100:200;
+        document.write(result);
+        document.write(inlinebreak);
+
+        //special operator typeof
+        result=(typeof a=="string"?"A is string" : "A is a Numeric value");
+        document.write("result=>");
+        document.write(result);
+        document.write(inlinebreak);
+
+
+    </script>
+    </div>
+</body>
+</html>
